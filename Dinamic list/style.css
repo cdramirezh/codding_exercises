@@ -1,0 +1,44 @@
+.icon {
+	height: 24px;
+	width: 24px;
+	color: lightgray;
+}
+
+.selected .icon {
+	color: black;
+}
+
+.list,
+.grid {
+	display: grid;
+	gap: 10px;
+	/* margin: 0 auto; */
+	/* width: fit-content; */
+}
+
+.list {
+	grid-template-columns: 1fr;
+}
+
+.grid {
+	grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
+	margin: 0 auto;
+	
+}
+
+.card {
+	gap: 10px
+}
+
+.list .card {
+	display: flex;
+}
+
+.list .card img {
+	width: 100px;
+	border-radius: 10px;
+}
+
+.grid .card {
+	color: brown;
+}
